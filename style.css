@@ -1,32 +1,142 @@
-body{
-background-color: rgb(233, 248, 255);
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 14px;
-}
-h1, h2, h3 {
-    color: rgb(31, 160, 211);
-}
-nav {
-    display: block;
-    gap: 12px; 
-  }
-
-nav ul {
-    list-style: none; 
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-  }
-  
-  nav li {
-    float: left; /*lista horizontal*/
-  }
-  
-  nav a {
-    display: block; /*padding e margins */
-    padding: 10px 12px; /* Espaçamento */
-    text-decoration: none; /* Remove sublinhado de link */
-    color: rgb(255, 255, 255);
-    background-color: rgb(31, 160, 211);
-   
-  }
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    background-color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 0px;
+    position: relative;
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgb(31, 160, 211);
+    color: white;
+    text-align: center;
+    padding: 0px;
+    font-size: 15px;
+}
+h1{
+    margin-top: 4px;
+}
+/* Navegação */
+nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background: rgb(31, 160, 211);
+    z-index: 998;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    margin: 0 5px;
+}
+nav a {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+nav a:hover {
+    background: #1484b3;
+    border-radius: 6px;
+}
+
+/* Conteúdo principal */
+main {
+    margin-top: 60px; 
+    padding: 20px;
+}
+section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 750px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    scroll-margin-top: 110px;
+     
+}
+h2 {
+    color: rgb(31, 160, 211);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Imagens */
+img {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Rodapé */
+footer {
+    background: rgb(31, 160, 211);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 13px;
+}
+
+header nav a:hover {
+    background: #127aa7;
+    border-radius: 20px;
+}
+
+.textossections {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.imgsections {
+    margin: 0 auto;
+    display: block;
+    
+}
+ul{
+    list-style-type: none;
+}
+#personallink {
+    list-style: none;
+    text-decoration: none;
+    color: #1e86c2;
+    
+}
